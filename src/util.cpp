@@ -995,7 +995,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "casinocoin";
+    const char* pszModule = "sandcoins";
 #endif
     if (pex)
         return strprintf(
@@ -1031,13 +1031,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bitcoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bitcoin
-    // Mac: ~/Library/Application Support/Bitcoin
-    // Unix: ~/.bitcoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\SandCoins
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\SandCoins
+    // Mac: ~/Library/Application Support/SandCoins
+    // Unix: ~/.sandcoins
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "CasinoCoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "SandCoins";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1049,10 +1049,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "CasinoCoin";
+    return pathRet / "SandCoins";
 #else
     // Unix
-    return pathRet / ".casinocoin";
+    return pathRet / ".sandcoins";
 #endif
 #endif
 }
@@ -1093,7 +1093,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "casinocoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "sandcoins.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1127,7 +1127,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "casinocoind.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "sandcoinsd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

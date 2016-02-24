@@ -119,7 +119,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
     cscWebApi( new CasinoCoinWebAPI( this ) )
 {
     ui->setupUi(this);
-    createAdvertsWidget();
+    // createAdvertsWidget();
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);

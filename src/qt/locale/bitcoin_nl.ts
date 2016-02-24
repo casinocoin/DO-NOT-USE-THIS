@@ -5,12 +5,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About CasinoCoin</source>
-        <translation>Over CasinoCoin</translation>
+        <translation>Over SandCoins</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;CasinoCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;CasinoCoin&lt;/b&gt; versie</translation>
+        <translation>&lt;b&gt;SandCoins&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -35,7 +35,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+0"/>
         <source>The CasinoCoin developers</source>
-        <translation>De CasinoCoin-ontwikkelaars</translation>
+        <translation>De SandCoins ontwikkelaars</translation>
     </message>
 </context>
 <context>
@@ -68,7 +68,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your CasinoCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit zijn uw CasinoCoinadressen om betalingen mee te ontvangen. U kunt er voor kiezen om een uniek adres aan te maken voor elke afzender. Op deze manier kunt u bijhouden wie al aan u betaald heeft.</translation>
+        <translation>Dit zijn uw SandCoins adressen om betalingen mee te ontvangen. U kunt er voor kiezen om een uniek adres aan te maken voor elke afzender. Op deze manier kunt u bijhouden wie al aan u betaald heeft.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -83,7 +83,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+11"/>
         <source>Sign a message to prove you own a CasinoCoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald CasinoCoinadres bezit</translation>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald SandCoins adres bezit</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -108,7 +108,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified CasinoCoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde CasinoCoinadres het bericht heeft ondertekend.</translation>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde SandCoins adres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -123,7 +123,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your CasinoCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw CasinoCoinadressen om betalingen mee te verzenden. Check altijd het bedrag en het ontvangende adres voordat u uw casinocoins verzendt.</translation>
+        <translation>Dit zijn uw SandCoins adressen om betalingen mee te verzenden. Check altijd het bedrag en het ontvangende adres voordat u uw SandCoins verzendt.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -276,7 +276,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="-56"/>
         <source>CasinoCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your casinocoins from being stolen by malware infecting your computer.</source>
-        <translation>CasinoCoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw casinocoins stelen.</translation>
+        <translation>SandCoins zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw SandCoins stelen.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -375,7 +375,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+4"/>
         <source>Show information about CasinoCoin</source>
-        <translation>Laat informatie zien over CasinoCoin</translation>
+        <translation>Laat informatie zien over SandCoins</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,12 +420,12 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="-347"/>
         <source>Send coins to a CasinoCoin address</source>
-        <translation>Verstuur munten naar een CasinoCoinadres</translation>
+        <translation>Verstuur munten naar een SandCoins adres</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for CasinoCoin</source>
-        <translation>Wijzig instellingen van CasinoCoin</translation>
+        <translation>Wijzig instellingen van SandCoins</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -456,7 +456,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
         <location line="-165"/>
         <location line="+530"/>
         <source>CasinoCoin</source>
-        <translation>CasinoCoin</translation>
+        <translation>SandCoins</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -481,7 +481,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+22"/>
         <source>&amp;About CasinoCoin</source>
-        <translation>&amp;Over CasinoCoin</translation>
+        <translation>&amp;Over SandCoins</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,12 +501,12 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+7"/>
         <source>Sign messages with your CasinoCoin addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw CasinoCoinadressen om te bewijzen dat u deze adressen bezit</translation>
+        <translation>Onderteken berichten met uw SandCoins adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified CasinoCoin addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde CasinoCoinadressen</translation>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde SandCoins adressen</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -537,12 +537,12 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+47"/>
         <source>CasinoCoin client</source>
-        <translation>CasinoCoin client</translation>
+        <translation>SandCoins client</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to CasinoCoin network</source>
-        <translation><numerusform>%n actieve connectie naar CasinoCoinnetwerk</numerusform><numerusform>%n actieve connecties naar CasinoCoinnetwerk</numerusform></translation>
+        <translation><numerusform>%n actieve connectie naar SandCoins netwerk</numerusform><numerusform>%n actieve connecties naar SandCoins netwerk</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -607,7 +607,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation>Deze transactie overschrijdt de groottelimiet. Om de transactie alsnog te versturen kunt u transactiekosten betalen van %1. Deze transactiekosten gaan naar de nodes die uw transactie verwerken en het helpt op deze manier bij het ondersteunen van het CasinoCoinnetwerk. Wilt u de transactiekosten betalen?</translation>
+        <translation>Deze transactie overschrijdt de groottelimiet. Om de transactie alsnog te versturen kunt u transactiekosten betalen van %1. Deze transactiekosten gaan naar de nodes die uw transactie verwerken en het helpt op deze manier bij het ondersteunen van het SandCoins netwerk. Wilt u de transactiekosten betalen?</translation>
     </message>
     <message>
         <location line="-140"/>
@@ -657,7 +657,7 @@ Adres: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid CasinoCoin address or malformed URI parameters.</source>
-        <translation>URI kan niet worden geïnterpreteerd. Dit kan komen door een ongeldig CasinoCoinadres of misvormde URI-parameters.</translation>
+        <translation>URI kan niet worden geïnterpreteerd. Dit kan komen door een ongeldig SandCoins adres of misvormde URI-parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -672,7 +672,7 @@ Adres: %4
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. CasinoCoin can no longer continue safely and will quit.</source>
-        <translation>Er is een fatale fout opgetreden. CasinoCoin kan niet meer veilig doorgaan en zal nu afgesloten worden.</translation>
+        <translation>Er is een fatale fout opgetreden. SandCoins kan niet meer veilig doorgaan en zal nu afgesloten worden.</translation>
     </message>
 </context>
 <context>
@@ -738,7 +738,7 @@ Adres: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid CasinoCoin address.</source>
-        <translation>Het opgegeven adres &quot;%1&quot; is een ongeldig CasinoCoinadres</translation>
+        <translation>Het opgegeven adres &quot;%1&quot; is een ongeldig SandCoins adres</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -757,7 +757,7 @@ Adres: %4
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>CasinoCoin-Qt</source>
-        <translation>CasinoCoin-Qt</translation>
+        <translation>SandCoins-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -820,12 +820,12 @@ Adres: %4
     <message>
         <location line="+31"/>
         <source>Automatically start CasinoCoin after logging in to the system.</source>
-        <translation>Start CasinoCoin automatisch na inloggen in het systeem</translation>
+        <translation>Start SandCoins automatisch na inloggen in het systeem</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start CasinoCoin on system login</source>
-        <translation>Start &amp;CasinoCoin bij het inloggen in het systeem</translation>
+        <translation>Start &amp;SandCoins bij het inloggen in het systeem</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -845,7 +845,7 @@ Adres: %4
     <message>
         <location line="+6"/>
         <source>Automatically open the CasinoCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de CasinoCoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+        <translation>Open de SandCoins poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -855,7 +855,7 @@ Adres: %4
     <message>
         <location line="+7"/>
         <source>Connect to the CasinoCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Verbind met het CasinoCoin-netwerk via een SOCKS-proxy (bijv. wanneer u via Tor wilt verbinden)</translation>
+        <translation>Verbind met het SandCoins netwerk via een SOCKS-proxy (bijv. wanneer u via Tor wilt verbinden)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -930,7 +930,7 @@ Adres: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting CasinoCoin.</source>
-        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat CasinoCoin herstart wordt.</translation>
+        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat SandCoins herstart wordt.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -945,7 +945,7 @@ Adres: %4
     <message>
         <location line="+9"/>
         <source>Whether to show CasinoCoin addresses in the transaction list or not.</source>
-        <translation>Of CasinoCoinadressen getoond worden in de transactielijst</translation>
+        <translation>Of SandCoins adressen getoond worden in de transactielijst</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -997,7 +997,7 @@ Adres: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting CasinoCoin.</source>
-        <translation>Deze instelling zal pas van kracht worden na het herstarten van CasinoCoin.</translation>
+        <translation>Deze instelling zal pas van kracht worden na het herstarten van SandCoins.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1016,7 +1016,7 @@ Adres: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CasinoCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het CasinoCoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het SandCoins netwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1070,7 +1070,7 @@ Adres: %4
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start casinocoin: click-to-pay handler</source>
-        <translation>Kan casinocoin niet starten: click-to-pay handler</translation>
+        <translation>Kan SandCoins niet starten: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1220,7 +1220,7 @@ Adres: %4
     <message>
         <location line="+7"/>
         <source>Show the CasinoCoin-Qt help message to get a list with possible CasinoCoin command-line options.</source>
-        <translation>Toon het CasinoCoinQt-hulpbericht voor een lijst met mogelijke CasinoCoin commandoregel-opties.</translation>
+        <translation>Toon het SandCoins-Qt hulpbericht voor een lijst met mogelijke SandCoins commandoregel-opties.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1240,12 +1240,12 @@ Adres: %4
     <message>
         <location line="-104"/>
         <source>CasinoCoin - Debug window</source>
-        <translation>CasinoCoin-debugscherm</translation>
+        <translation>SandCoins - debugscherm</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>CasinoCoin Core</source>
-        <translation>CasinoCoin Kern</translation>
+        <translation>SandCoins Kern</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1255,7 +1255,7 @@ Adres: %4
     <message>
         <location line="+7"/>
         <source>Open the CasinoCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het CasinoCoindebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
+        <translation>Open het SandCoins debug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1265,7 +1265,7 @@ Adres: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the CasinoCoin RPC console.</source>
-        <translation>Welkom bij de CasinoCoin RPC-console.</translation>
+        <translation>Welkom bij de SandCoins RPC-console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1449,7 +1449,7 @@ Adres: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a CasinoCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Vul een CasinoCoinadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <translation>Vul een SandCoins adres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1514,7 +1514,7 @@ Adres: %4
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this CasinoCoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald CasinoCoinadres bezit</translation>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald SandCoins adres bezit</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1550,7 +1550,7 @@ Adres: %4
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified CasinoCoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde CasinoCoinadres het bericht heeft ondertekend.</translation>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde SandCoins adres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1566,7 +1566,7 @@ Adres: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a CasinoCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Vul een CasinoCoinadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <translation>Vul een SandCoins adres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1576,7 +1576,7 @@ Adres: %4
     <message>
         <location line="+3"/>
         <source>Enter CasinoCoin signature</source>
-        <translation>Voer CasinoCoin-handtekening in</translation>
+        <translation>Voer SandCoins handtekening in</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1650,7 +1650,7 @@ Adres: %4
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The CasinoCoin developers</source>
-        <translation>De CasinoCoin-ontwikkelaars</translation>
+        <translation>De SandCoins ontwikkelaars</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2188,7 +2188,7 @@ Adres: %4
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>CasinoCoin version</source>
-        <translation>CasinoCoinversie</translation>
+        <translation>SandCoins versie</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2198,7 +2198,7 @@ Adres: %4
     <message>
         <location line="-29"/>
         <source>Send command to -server or casinocoind</source>
-        <translation>Stuur commando naar -server of casinocoind</translation>
+        <translation>Stuur commando naar -server of sandcoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2218,13 +2218,13 @@ Adres: %4
     <message>
         <location line="+24"/>
         <source>Specify configuration file (default: casinocoin.conf)</source>
-        <translation>Specificeer configuratiebestand (standaard: casinocoin.conf)
+        <translation>Specificeer configuratiebestand (standaard: sandcoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Specify pid file (default: casinocoind.pid)</source>
-        <translation>Specificeer pid-bestand (standaard: casinocoind.pid)
+        <translation>Specificeer pid-bestand (standaard: sandcoind.pid)
 </translation>
     </message>
     <message>
@@ -2312,13 +2312,13 @@ for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@f
 </source>
         <translation>%s, u moet een RPC-wachtwoord instellen in het configuratiebestand: %s
 U wordt aangeraden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=casinocoinrpc
+rpcuser=sandcoinrpc
 rpcpassword=%s
 (u hoeft dit wachtwoord niet te onthouden)
 De gebruikersnaam en wachtwoord mogen niet hetzelfde zijn.
 Als het bestand niet bestaat, make hem dan aan met leesrechten voor enkel de eigenaar.
 Het is ook aan te bevelen &quot;alertnotify&quot; in te stellen zodat u op de hoogte gesteld wordt van problemen;
-for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@foo.com</translation>
+for example: alertnotify=echo %%s | mail -s &quot;SandCoins Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2333,7 +2333,7 @@ for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@f
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. CasinoCoin is probably already running.</source>
-        <translation>Kan geen lock op de datamap %s verkrijgen. CasinoCoin draait vermoedelijk reeds.</translation>
+        <translation>Kan geen lock op de datamap %s verkrijgen. SandCoins draait vermoedelijk reeds.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2378,7 +2378,7 @@ for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@f
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CasinoCoin will not work properly.</source>
-        <translation>Waarschuwing: Controleer dat de datum en tijd op uw computer correct zijn ingesteld. Als uw klok fout staat zal CasinoCoin niet correct werken.</translation>
+        <translation>Waarschuwing: Controleer dat de datum en tijd op uw computer correct zijn ingesteld. Als uw klok fout staat zal SandCoins niet correct werken.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2628,7 +2628,7 @@ for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@f
     <message>
         <location line="+5"/>
         <source>SSL options: (see the CasinoCoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-opties: (zie de CasinoCoin wiki voor SSL-instructies)</translation>
+        <translation>SSL-opties: (zie de SandCoins wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2818,12 +2818,12 @@ for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@f
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of CasinoCoin</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van CasinoCoin</translation>
+        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van SandCoins</translation>
     </message>
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart CasinoCoin to complete</source>
-        <translation>Portemonnee moest herschreven worden: Herstart CasinoCoin om te voltooien</translation>
+        <translation>Portemonnee moest herschreven worden: Herstart SandCoins om te voltooien</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2883,7 +2883,7 @@ for example: alertnotify=echo %%s | mail -s &quot;CasinoCoin Alert&quot; admin@f
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. CasinoCoin is probably already running.</source>
-        <translation>Niet in staat om aan %s te binden op deze computer. CasinoCoin draait vermoedelijk reeds.</translation>
+        <translation>Niet in staat om aan %s te binden op deze computer. SandCoins draait vermoedelijk reeds.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -28,6 +28,8 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
     ui->mapPortUpnp->setEnabled(false);
 #endif
 
+    ui->displayPromotions->hide();
+
     ui->proxyIp->setEnabled(false);
     ui->proxyPort->setEnabled(false);
     ui->proxyPort->setValidator(new QIntValidator(1, 65535, this));

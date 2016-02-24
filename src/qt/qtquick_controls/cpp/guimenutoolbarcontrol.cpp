@@ -10,7 +10,7 @@ GUIMenuToolbarControl::GUIMenuToolbarControl( QQuickItem* a_pParent )
 	: QQuickItem( a_pParent )
 	, m_pMenuToolbarView( 0 )
 	, m_strVisitWebsiteText( tr( "Visit our website" ) )
-	, m_strWebsiteURL( tr( "casinocoin.org" ) )
+    , m_strWebsiteURL( tr( "www.sandcoins.com" ) )
 {
 }
 

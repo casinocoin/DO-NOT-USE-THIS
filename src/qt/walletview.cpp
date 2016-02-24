@@ -37,6 +37,8 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
     clientModel(0),
     walletModel(0)
 {
+    // set background
+//    gui->setStyleSheet("background-image: url(:/images/background);");
     // Create tabs
     overviewPage = new OverviewPage();
 
@@ -47,7 +49,7 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
     vbox->addWidget(transactionView);
     QPushButton *exportButton = new QPushButton(tr("&Export"), this);
     exportButton->setToolTip(tr("Export the data in the current tab to a file"));
-	exportButton->setStyleSheet( "background-color: rgb(170, 28, 33);\ncolor: rgb(255, 255, 255);\npressed\n{\nbackground-color: rgb(166, 27, 31);\n}" );
+    exportButton->setStyleSheet( "background-color: rgb(42, 202, 254);\ncolor: rgb(255, 255, 255);\npressed\n{\nbackground-color: rgb(37, 201, 252);\n}" );
 #ifndef Q_OS_MAC // Icons on push buttons are very uncommon on Mac
     exportButton->setIcon(QIcon(":/icons/export"));
 #endif
