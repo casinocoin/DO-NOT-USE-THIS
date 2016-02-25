@@ -84,11 +84,12 @@
     <item row="4" column="1">
      <widget class="QPushButton" name="butRedeem">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(166, 27, 31);
+       <string notr="true">background-color: rgb(37, 201, 252);
+selection-background-color: rgb(0, 32, 64);
 color: rgb(255, 255, 255);
 pressed
 {
-background-color: rgb(166, 27, 31);
+background-color: rgb(0, 32, 64);
 }</string>
       </property>
       <property name="text">

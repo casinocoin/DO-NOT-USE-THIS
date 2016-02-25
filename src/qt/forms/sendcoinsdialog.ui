@@ -84,7 +84,7 @@
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color:rgb(166,27,31);font-weight:bold;</string>
+             <string notr="true">color:rgb(37, 201, 252);font-weight:bold;</string>
             </property>
             <property name="text">
              <string>Coin Control Features</string>
@@ -130,7 +130,7 @@
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color:rgb(166,27,31);font-weight:bold;</string>
+             <string notr="true">color:rgb(37, 201, 252);font-weight:bold;</string>
             </property>
             <property name="text">
              <string>Insufficient funds!</string>
@@ -730,11 +730,11 @@
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(166, 27, 31);
+        <string notr="true">background-color: rgb(37, 201, 252);
 color: rgb(255, 255, 255);
 pressed
 {
-background-color: rgb(166, 27, 31);
+background-color: rgb(0, 32, 64);
 }</string>
        </property>
        <property name="text">
@@ -771,7 +771,7 @@ background-color: rgb(166, 27, 31);
         <x>0</x>
         <y>0</y>
         <width>832</width>
-        <height>169</height>
+        <height>174</height>
        </rect>
       </property>
       <property name="styleSheet">

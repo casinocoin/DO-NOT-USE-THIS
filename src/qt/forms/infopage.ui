@@ -63,7 +63,7 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(166, 27, 31);</string>
+         <string notr="true">color: rgb(37, 201, 252);</string>
         </property>
         <property name="text">
          <string>Exchanges</string>
@@ -104,7 +104,7 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(166, 27, 31);</string>
+         <string notr="true">color: rgb(37, 201, 252);</string>
         </property>
         <property name="text">
          <string>Information</string>
