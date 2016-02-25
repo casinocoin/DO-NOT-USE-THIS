@@ -1,5 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
-<defaultcodec>UTF-8</defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -13,14 +14,27 @@
         <translation>&lt;b&gt;SandCoins&lt;/b&gt; version</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+58"/>
+        <source>
+This is experimental software.
+
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
+
+Website: http://casinocoin.org
+Forum: http://forums.casinocoin.org
+         </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>
 This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
+        <translation type="vanished">
  Ce logiciel est en phase expérimentale.
 
  Distribué sous licence MIT/X11, voir le fichier COPYING ou http://www.opensource.org/licenses/mit-license.php.
@@ -28,14 +42,30 @@ This product includes software developed by the OpenSSL Project for use in the O
  Ce produit comprend des fonctionnalités développées par le projet OpenSSL pour être utilisés dans la boîte à outils OpenSSL (http://www.openssl.org/), un logiciel cryptographique écrit par Eric Young (eay@cryptsoft.com), et des fonctionnalités développées pour le logiciel UPnP écrit par Thomas Bernard.</translation>
     </message>
     <message>
-        <location filename="../aboutdialog.cpp" line="+14"/>
+        <location filename="../aboutdialog.cpp" line="+18"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Copyright</source>
         <translation>Droit d&apos;auteur</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-2"/>
+        <source>The Bitcoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>2013-%1 The CasinoCoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>2015 - GUI 2.0 Design by Felix Rojauro (felix.rojauro@gmail.com)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The CasinoCoin developers</source>
-        <translation>Les développeurs SandCoins</translation>
+        <translation type="vanished">Les développeurs SandCoins</translation>
     </message>
 </context>
 <context>
@@ -46,12 +76,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Carnet d&apos;adresses</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+151"/>
         <source>Double-click to edit address or label</source>
         <translation>Double cliquez afin de modifier l&apos;adresse ou l&apos;étiquette</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="-143"/>
         <source>Create a new address</source>
         <translation>Créer une nouvelle adresse</translation>
     </message>
@@ -66,7 +96,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Nouvelle adresse</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
+        <location filename="../addressbookpage.cpp" line="+64"/>
         <source>These are your CasinoCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Voici vos adresses SandCoins qui vous permettent de recevoir des paiements. Vous pouvez donner une adresse différente à chaque expéditeur afin de savoir qui vous paye.</translation>
     </message>
@@ -101,12 +131,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Exporter les données de l&apos;onglet courant vers un fichier</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+14"/>
         <source>&amp;Export</source>
         <translation>&amp;Exporter</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-55"/>
         <source>Verify a message to ensure it was signed with a specified CasinoCoin address</source>
         <translation>Vérifier un message pour vous assurer qu&apos;il a bien été signé avec l&apos;adresse SandCoins spécifiée</translation>
     </message>
@@ -141,7 +171,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Envoyer des Bit&amp;coins</translation>
     </message>
     <message>
-        <location line="+260"/>
+        <location line="+265"/>
         <source>Export Address Book Data</source>
         <translation>Exporter les données du carnet d&apos;adresses</translation>
     </message>
@@ -164,7 +194,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+144"/>
+        <location filename="../addresstablemodel.cpp" line="+145"/>
         <source>Label</source>
         <translation>Étiquette</translation>
     </message>
@@ -323,17 +353,17 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+233"/>
+        <location filename="../bitcoingui.cpp" line="+276"/>
         <source>Sign &amp;message...</source>
         <translation>Signer un &amp;message...</translation>
     </message>
     <message>
-        <location line="+280"/>
+        <location line="+313"/>
         <source>Synchronizing with network...</source>
         <translation>Synchronisation avec le réseau…</translation>
     </message>
     <message>
-        <location line="-349"/>
+        <location line="-400"/>
         <source>&amp;Overview</source>
         <translation>&amp;Vue d&apos;ensemble</translation>
     </message>
@@ -363,7 +393,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Afficher la liste des adresses pour recevoir des paiements</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+49"/>
         <source>E&amp;xit</source>
         <translation>Q&amp;uitter</translation>
     </message>
@@ -408,7 +438,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Modifier la phrase de passe...</translation>
     </message>
     <message>
-        <location line="+285"/>
+        <location line="+318"/>
         <source>Importing blocks from disk...</source>
         <translation>Importation des blocs depuis le disque...</translation>
     </message>
@@ -418,12 +448,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Réindexation des blocs sur le disque...</translation>
     </message>
     <message>
-        <location line="-347"/>
+        <location line="-398"/>
         <source>Send coins to a CasinoCoin address</source>
         <translation>Envoyer des pièces à une adresse SandCoins</translation>
     </message>
     <message>
-        <location line="+49"/>
+        <location line="+67"/>
         <source>Modify configuration options for CasinoCoin</source>
         <translation>Modifier les options de configuration de SandCoins</translation>
     </message>
@@ -453,18 +483,18 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Vérifier un message...</translation>
     </message>
     <message>
-        <location line="-165"/>
-        <location line="+530"/>
+        <location line="-198"/>
+        <location line="+596"/>
         <source>CasinoCoin</source>
         <translation>SandCoins</translation>
     </message>
     <message>
-        <location line="-530"/>
+        <location line="-596"/>
         <source>Wallet</source>
         <translation>Porte-monnaie</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location line="+116"/>
         <source>&amp;Send</source>
         <translation>&amp;Envoyer</translation>
     </message>
@@ -479,7 +509,27 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Adresses</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+7"/>
+        <source>&amp;Prypto Redeem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Redeem the value of a Prypto card to your wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Information</source>
+        <translation type="unfinished">&amp;Informations</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show all Casinocoin related information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
         <source>&amp;About CasinoCoin</source>
         <translation>À &amp;propos de SandCoins</translation>
     </message>
@@ -524,25 +574,27 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Tabs toolbar</source>
-        <translation>Barre d&apos;outils des onglets</translation>
+        <translation type="vanished">Barre d&apos;outils des onglets</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+15"/>
         <location line="+10"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+64"/>
         <source>CasinoCoin client</source>
         <translation>Client SandCoins</translation>
     </message>
     <message numerus="yes">
-        <location line="+141"/>
+        <location line="+168"/>
         <source>%n active connection(s) to CasinoCoin network</source>
-        <translation><numerusform>%n connexion active avec le réseau SandCoins</numerusform><numerusform>%n connexions actives avec le réseau SandCoins</numerusform></translation>
+        <translation>
+            <numerusform>%n connexion active avec le réseau SandCoins</numerusform>
+            <numerusform>%n connexions actives avec le réseau SandCoins</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+22"/>
@@ -562,17 +614,26 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n heure</numerusform><numerusform>%n heures</numerusform></translation>
+        <translation>
+            <numerusform>%n heure</numerusform>
+            <numerusform>%n heures</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n jour</numerusform><numerusform>%n jours</numerusform></translation>
+        <translation>
+            <numerusform>%n jour</numerusform>
+            <numerusform>%n jours</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation><numerusform>%n semaine</numerusform><numerusform>%n semaines</numerusform></translation>
+        <translation>
+            <numerusform>%n semaine</numerusform>
+            <numerusform>%n semaines</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -670,7 +731,7 @@ Adresse : %4
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+111"/>
+        <location filename="../bitcoin.cpp" line="+113"/>
         <source>A fatal error occurred. CasinoCoin can no longer continue safely and will quit.</source>
         <translation>Une erreur fatale est survenue. SandCoins ne peut plus continuer à fonctionner de façon sûre et va s&apos;arrêter.</translation>
     </message>
@@ -681,6 +742,276 @@ Adresse : %4
         <location filename="../clientmodel.cpp" line="+104"/>
         <source>Network Alert</source>
         <translation>Alerte réseau</translation>
+    </message>
+</context>
+<context>
+    <name>CoinControlDialog</name>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <source>Coin Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Quantity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Bytes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Montant :</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Priority:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Fee:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <location filename="../coincontroldialog.cpp" line="+592"/>
+        <source>no</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Change:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>(un)select all</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Tree mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>List mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>(1 locked)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Amount</source>
+        <translation type="unfinished">Montant</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address</source>
+        <translation type="unfinished">Adresse</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Date</source>
+        <translation type="unfinished">Date</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Confirmations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirmed</source>
+        <translation type="unfinished">Confirmée</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Priority</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="-555"/>
+        <source>Copy address</source>
+        <translation type="unfinished">Copier l’adresse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy label</source>
+        <translation type="unfinished">Copier l’étiquette</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <source>Copy amount</source>
+        <translation type="unfinished">Copier le montant</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Copy transaction ID</source>
+        <translation type="unfinished">Copier l&apos;ID de la transaction</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock unspent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unlock unspent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+323"/>
+        <source>highest</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>high</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium-high</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>low-medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>low</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lowest</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>(%1 locked)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+178"/>
+        <source>DUST</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>yes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>This label turns red, if the transaction size is bigger than 5000 bytes.
+
+ This means a fee of at least %1 per kb is required.
+
+ Can vary +/- 1 Byte per input.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transactions with higher priority get more likely into a block.
+
+This label turns red, if the priority is smaller than &quot;medium&quot;.
+
+ This means a fee of at least %1 per kb is required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.
+
+ This means a fee of at least %2 is required. 
+
+ Amounts below 0.546 times the minimum relay fee are shown as DUST.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if the change is smaller than %1.
+
+ This means a fee of at least %2 is required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <location line="+66"/>
+        <source>(no label)</source>
+        <translation type="unfinished">(aucune étiquette)</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>change from %1 (%2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(change)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -752,9 +1083,92 @@ Adresse : %4
     </message>
 </context>
 <context>
+    <name>GUIMenuToolbarControl</name>
+    <message>
+        <location filename="../qtquick_controls/cpp/guimenutoolbarcontrol.cpp" line="+12"/>
+        <source>Visit our website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>www.sandcoins.com</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Overview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Overview description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Send description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Receive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Receive description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Transactions description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Contacts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Contacts description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Redeem Prypto</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Redeem Prypto description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Info description</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+498"/>
         <location line="+12"/>
         <source>CasinoCoin-Qt</source>
         <translation>SandCoins-Qt</translation>
@@ -796,6 +1210,69 @@ Adresse : %4
     </message>
 </context>
 <context>
+    <name>InfoPage</name>
+    <message>
+        <location filename="../forms/infopage.ui" line="+20"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Exchanges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Current number of blocks</source>
+        <translation type="unfinished">Nombre actuel de blocs</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Last block time</source>
+        <translation type="unfinished">Horodatage du dernier bloc</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Coin Supply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+204"/>
+        <source>Number of connections</source>
+        <translation type="unfinished">Nombre de connexions</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Difficulty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Network Hashrate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Transactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Coin Fiat Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>-</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>OptionsDialog</name>
     <message>
         <location filename="../forms/optionsdialog.ui" line="+14"/>
@@ -808,27 +1285,27 @@ Adresse : %4
         <translation>Réglages &amp;principaux</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
         <translation>Frais de transaction optionnel par ko qui aident à garantir un traitement rapide des transactions. La plupart des transactions utilisent 1 ko.</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+19"/>
         <source>Pay transaction &amp;fee</source>
         <translation>Payer des &amp;frais de transaction</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+22"/>
         <source>Automatically start CasinoCoin after logging in to the system.</source>
         <translation>Démarrer SandCoins automatiquement lors de l&apos;ouverture une session sur l&apos;ordinateur.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>&amp;Start CasinoCoin on system login</source>
         <translation>&amp;Démarrer SandCoins lors de l&apos;ouverture d&apos;une session</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+39"/>
         <source>Reset all client options to default.</source>
         <translation>Remettre toutes les options du client aux valeurs par défaut.</translation>
     </message>
@@ -838,12 +1315,12 @@ Adresse : %4
         <translation>&amp;Remise à zéro des options</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+14"/>
         <source>&amp;Network</source>
         <translation>&amp;Réseau</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+19"/>
         <source>Automatically open the CasinoCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Ouvrir le port du client SandCoins automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l&apos;UPnP et si la fonctionnalité est activée.</translation>
     </message>
@@ -853,7 +1330,7 @@ Adresse : %4
         <translation>Ouvrir le port avec l&apos;&amp;UPnP</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-13"/>
         <source>Connect to the CasinoCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Connexion au réseau SandCoins à travers un proxy SOCKS (par ex. lors d&apos;une connexion via Tor).</translation>
     </message>
@@ -863,42 +1340,42 @@ Adresse : %4
         <translation>&amp;Connexion à travers un proxy SOCKS :</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+23"/>
         <source>Proxy &amp;IP:</source>
         <translation>&amp;IP du proxy :</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+65"/>
         <source>IP address of the proxy (e.g. 127.0.0.1)</source>
         <translation>Adresse IP du proxy (par ex. 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-52"/>
         <source>&amp;Port:</source>
         <translation>&amp;Port :</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+65"/>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Port du proxy (par ex. 9050)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-52"/>
         <source>SOCKS &amp;Version:</source>
         <translation>&amp;Version SOCKS :</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+26"/>
         <source>SOCKS version of the proxy (e.g. 5)</source>
         <translation>Version SOCKS du serveur mandataire (par ex. 5)</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+50"/>
         <source>&amp;Window</source>
         <translation>&amp;Fenêtre</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Afficher uniquement une icône système après minimisation.</translation>
     </message>
@@ -918,12 +1395,12 @@ Adresse : %4
         <translation>M&amp;inimiser lors de la fermeture</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Display</source>
         <translation>&amp;Affichage</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+14"/>
         <source>User Interface &amp;language:</source>
         <translation>&amp;Langue de l&apos;interface utilisateur :</translation>
     </message>
@@ -943,7 +1420,17 @@ Adresse : %4
         <translation>Choisissez la sous-unité par défaut pour l&apos;affichage dans l&apos;interface et lors de l&apos;envoi de pièces.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+11"/>
+        <source>Currency to show amounts in:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Choose the default currency in which to show your total coin value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Whether to show CasinoCoin addresses in the transaction list or not.</source>
         <translation>Détermine si les adresses SandCoins seront affichées sur la liste des transactions.</translation>
     </message>
@@ -953,7 +1440,27 @@ Adresse : %4
         <translation>&amp;Afficher les adresses sur la liste des transactions</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+7"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display coin &amp;control features (experts only!)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Whether to show casino promotions on the overview page or not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display casino promotions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
         <source>&amp;OK</source>
         <translation>&amp;Valider</translation>
     </message>
@@ -968,12 +1475,12 @@ Adresse : %4
         <translation>&amp;Appliquer</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+53"/>
+        <location filename="../optionsdialog.cpp" line="+57"/>
         <source>default</source>
         <translation>par défaut</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+133"/>
         <source>Confirm options reset</source>
         <translation>Confirmer la remise à zéro des options</translation>
     </message>
@@ -1013,28 +1520,28 @@ Adresse : %4
         <translation>Formulaire</translation>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+166"/>
+        <location line="+93"/>
+        <location line="+211"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CasinoCoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Les informations affichées peuvent être obsolètes. Votre porte-monnaie est automatiquement synchronisé avec le réseau SandCoins lorsque la connexion s&apos;établit, or ce processus n&apos;est pas encore terminé.</translation>
     </message>
     <message>
-        <location line="-124"/>
+        <location line="-193"/>
         <source>Balance:</source>
         <translation>Solde :</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+33"/>
         <source>Unconfirmed:</source>
         <translation>Non confirmé :</translation>
     </message>
     <message>
-        <location line="-78"/>
+        <location line="-71"/>
         <source>Wallet</source>
         <translation>Porte-monnaie</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+103"/>
         <source>Immature:</source>
         <translation>Immature :</translation>
     </message>
@@ -1044,22 +1551,32 @@ Adresse : %4
         <translation>Le solde généré n&apos;est pas encore mûr</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+16"/>
+        <source>Estimated Fiat Balance:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Estimated Fiat balance calculated against current market value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+66"/>
         <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
         <translation>&lt;b&gt;Transactions récentes&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-156"/>
         <source>Your current balance</source>
         <translation>Votre solde actuel</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+32"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
         <translation>Total des transactions qui doivent encore être confirmées et qui ne sont pas prises en compte dans le solde actuel</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+116"/>
+        <location filename="../overviewpage.cpp" line="+137"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>désynchronisé</translation>
@@ -1068,9 +1585,37 @@ Adresse : %4
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+107"/>
+        <location filename="../paymentserver.cpp" line="+109"/>
         <source>Cannot start casinocoin: click-to-pay handler</source>
         <translation>Impossible de démarrer SandCoins : gestionnaire de cliquer-pour-payer</translation>
+    </message>
+</context>
+<context>
+    <name>PryptoPage</name>
+    <message>
+        <location filename="../forms/pryptopage.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Enter your Prypto Code and Security Code to redeem your Prypto card.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Prypto Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Security Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Redeem</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1106,7 +1651,7 @@ Adresse : %4
         <translation>&amp;Enregistrer sous...</translation>
     </message>
     <message>
-        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <location filename="../qrcodedialog.cpp" line="+64"/>
         <source>Error encoding URI into QR Code.</source>
         <translation>Erreur de l&apos;encodage de l&apos;URI dans le QR Code.</translation>
     </message>
@@ -1143,17 +1688,16 @@ Adresse : %4
         <location line="+23"/>
         <location line="+26"/>
         <location line="+23"/>
-        <location line="+23"/>
         <location line="+36"/>
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+339"/>
+        <location filename="../rpcconsole.cpp" line="+340"/>
         <source>N/A</source>
         <translation>Indisponible</translation>
     </message>
     <message>
-        <location line="-217"/>
+        <location line="-194"/>
         <source>Client version</source>
         <translation>Version du client</translation>
     </message>
@@ -1168,7 +1712,7 @@ Adresse : %4
         <translation>Version d&apos;OpenSSL utilisée</translation>
     </message>
     <message>
-        <location line="+49"/>
+        <location line="+26"/>
         <source>Startup time</source>
         <translation>Date de démarrage</translation>
     </message>
@@ -1233,12 +1777,11 @@ Adresse : %4
         <translation>&amp;Console</translation>
     </message>
     <message>
-        <location line="-260"/>
         <source>Build date</source>
-        <translation>Date de compilation</translation>
+        <translation type="vanished">Date de compilation</translation>
     </message>
     <message>
-        <location line="-104"/>
+        <location line="-341"/>
         <source>CasinoCoin - Debug window</source>
         <translation>SandCoins - Fenêtre de débogage</translation>
     </message>
@@ -1248,7 +1791,7 @@ Adresse : %4
         <translation>Noyau SandCoins</translation>
     </message>
     <message>
-        <location line="+279"/>
+        <location line="+256"/>
         <source>Debug log file</source>
         <translation>Journal de débogage</translation>
     </message>
@@ -1282,7 +1825,7 @@ Adresse : %4
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+124"/>
+        <location filename="../sendcoinsdialog.cpp" line="+179"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+5"/>
@@ -1293,7 +1836,82 @@ Adresse : %4
         <translation>Envoyer des pièces</translation>
     </message>
     <message>
+        <location line="+76"/>
+        <source>Coin Control Features</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inputs...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>automatically selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Insufficient funds!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+86"/>
+        <source>Quantity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Bytes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Montant :</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Priority:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Fee:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>no</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Change:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+50"/>
+        <source>custom change address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
         <source>Send to multiple recipients at once</source>
         <translation>Envoyer des pièces à plusieurs destinataires à la fois</translation>
     </message>
@@ -1313,32 +1931,82 @@ Adresse : %4
         <translation>&amp;Tout nettoyer</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+35"/>
         <source>Balance:</source>
         <translation>Solde :</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <location line="+16"/>
+        <source>123.456 CSC</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+31"/>
+        <source>123.456 BTC</source>
+        <translation type="vanished">123.456 BTC</translation>
+    </message>
+    <message>
+        <location line="+18"/>
         <source>Confirm the send action</source>
         <translation>Confirmer l’action d&apos;envoi</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+14"/>
         <source>S&amp;end</source>
         <translation>E&amp;nvoyer</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-59"/>
+        <location filename="../sendcoinsdialog.cpp" line="-175"/>
+        <source>Enter a CasinoCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation type="unfinished">Entrez une adresse SandCoins (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation type="unfinished">Copier le montant</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <location line="+2"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; à %2 (%3)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Confirm send coins</source>
         <translation>Confirmer l’envoi des pièces</translation>
     </message>
@@ -1353,7 +2021,7 @@ Adresse : %4
         <translation> et </translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+27"/>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Cette adresse de destinataire n’est pas valide, veuillez la vérifier.</translation>
     </message>
@@ -1387,6 +2055,21 @@ Adresse : %4
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Erreur : la transaction a été rejetée. Cela peut arriver si certaines pièces de votre porte-monnaie ont déjà été dépensées, par exemple si vous avez utilisé une copie de wallet.dat avec laquelle les pièces ont été dépensées mais pas marquées comme telles ici.</translation>
     </message>
+    <message>
+        <location line="+271"/>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>(no label)</source>
+        <translation type="unfinished">(aucune étiquette)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Warning: Unknown change address</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -1406,43 +2089,47 @@ Adresse : %4
         <translation>Payer &amp;à :</translation>
     </message>
     <message>
-        <location line="+34"/>
         <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>L&apos;adresse à laquelle le paiement sera envoyé (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <translation type="vanished">L&apos;adresse à laquelle le paiement sera envoyé (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+43"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Entrez une étiquette pour cette adresse afin de l’ajouter à votre carnet d’adresses</translation>
     </message>
     <message>
-        <location line="-78"/>
+        <location line="-30"/>
         <source>&amp;Label:</source>
         <translation>&amp;Étiquette :</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+18"/>
+        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
         <source>Choose address from address book</source>
         <translation>Choisir une adresse dans le carnet d&apos;adresses</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+13"/>
         <source>Paste address from clipboard</source>
         <translation>Coller une adresse depuis le presse-papiers</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-71"/>
         <source>Remove this recipient</source>
         <translation>Enlever ce destinataire</translation>
     </message>
@@ -1648,14 +2335,13 @@ Adresse : %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <location filename="../splashscreen.cpp" line="+22"/>
+        <location filename="../splashscreen.cpp" line="+23"/>
         <source>The CasinoCoin developers</source>
         <translation>Les développeurs SandCoins</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation type="vanished">[testnet]</translation>
     </message>
 </context>
 <context>
@@ -1688,7 +2374,10 @@ Adresse : %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, diffusée à travers %n nœud</numerusform><numerusform>, diffusée à travers %n nœuds</numerusform></translation>
+        <translation>
+            <numerusform>, diffusée à travers %n nœud</numerusform>
+            <numerusform>, diffusée à travers %n nœuds</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1741,7 +2430,10 @@ Adresse : %4
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>arrive à maturité dans %n bloc</numerusform><numerusform>arrive à maturité dans %n blocs de plus</numerusform></translation>
+        <translation>
+            <numerusform>arrive à maturité dans %n bloc</numerusform>
+            <numerusform>arrive à maturité dans %n blocs de plus</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1824,7 +2516,10 @@ Adresse : %4
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ouvert pour %n bloc de plus</numerusform><numerusform>Ouvert pour %n blocs de plus</numerusform></translation>
+        <translation>
+            <numerusform>Ouvert pour %n bloc de plus</numerusform>
+            <numerusform>Ouvert pour %n blocs de plus</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+70"/>
@@ -1870,7 +2565,10 @@ Adresse : %4
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ouvert pour %n bloc de plus</numerusform><numerusform>Ouvert pour %n blocs de plus</numerusform></translation>
+        <translation>
+            <numerusform>Ouvert pour %n bloc de plus</numerusform>
+            <numerusform>Ouvert pour %n blocs de plus</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1895,7 +2593,10 @@ Adresse : %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation><numerusform>Le solde généré (mined) sera disponible quand il aura mûri dans %n bloc</numerusform><numerusform>Le solde généré (mined) sera disponible quand il aura mûri dans %n blocs</numerusform></translation>
+        <translation>
+            <numerusform>Le solde généré (mined) sera disponible quand il aura mûri dans %n bloc</numerusform>
+            <numerusform>Le solde généré (mined) sera disponible quand il aura mûri dans %n blocs</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1938,7 +2639,7 @@ Adresse : %4
         <translation>(indisponible)</translation>
     </message>
     <message>
-        <location line="+199"/>
+        <location line="+203"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>État de la transaction. Laissez le pointeur de la souris sur ce champ pour voir le nombre de confirmations.</translation>
     </message>
@@ -1966,13 +2667,13 @@ Adresse : %4
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+52"/>
-        <location line="+16"/>
+        <location filename="../transactionview.cpp" line="+49"/>
+        <location line="+11"/>
         <source>All</source>
         <translation>Toutes</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-10"/>
         <source>Today</source>
         <translation>Aujourd’hui</translation>
     </message>
@@ -2002,7 +2703,7 @@ Adresse : %4
         <translation>Intervalle…</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+6"/>
         <source>Received with</source>
         <translation>Reçues avec</translation>
     </message>
@@ -2037,7 +2738,7 @@ Adresse : %4
         <translation>Montant min</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+29"/>
         <source>Copy address</source>
         <translation>Copier l’adresse</translation>
     </message>
@@ -2067,7 +2768,7 @@ Adresse : %4
         <translation>Afficher les détails de la transaction</translation>
     </message>
     <message>
-        <location line="+139"/>
+        <location line="+143"/>
         <source>Export Transaction Data</source>
         <translation>Exporter les données des transactions</translation>
     </message>
@@ -2122,20 +2823,28 @@ Adresse : %4
         <translation>Impossible d&apos;écrire dans le fichier %1.</translation>
     </message>
     <message>
-        <location line="+100"/>
+        <location line="+104"/>
         <source>Range:</source>
         <translation>Intervalle :</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
         <source>to</source>
         <translation>à</translation>
     </message>
 </context>
 <context>
+    <name>WalletFrame</name>
+    <message>
+        <location filename="../walletframe.cpp" line="+29"/>
+        <source>No wallet has been loaded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+193"/>
+        <location filename="../walletmodel.cpp" line="+206"/>
         <source>Send Coins</source>
         <translation>Envoyer des pièces</translation>
     </message>
@@ -2143,7 +2852,7 @@ Adresse : %4
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+42"/>
+        <location filename="../walletview.cpp" line="+50"/>
         <source>&amp;Export</source>
         <translation>&amp;Exporter</translation>
     </message>
@@ -2153,7 +2862,7 @@ Adresse : %4
         <translation>Exporter les données de l&apos;onglet courant vers un fichier</translation>
     </message>
     <message>
-        <location line="+193"/>
+        <location line="+221"/>
         <source>Backup Wallet</source>
         <translation>Sauvegarder le porte-monnaie</translation>
     </message>
@@ -2556,7 +3265,12 @@ par exemple : alertnotify=echo %%s | mail -s &quot;SandCoins Alert&quot; admin@f
         <translation>Vérification du porte-monnaie...</translation>
     </message>
     <message>
-        <location line="-69"/>
+        <location line="+4"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-73"/>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Importe des blocs depuis un fichier blk000??.dat externe</translation>
     </message>
@@ -2721,12 +3435,11 @@ par exemple : alertnotify=echo %%s | mail -s &quot;SandCoins Alert&quot; admin@f
         <translation>Avertissement : cette version est obsolète, une mise à jour est nécessaire !</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
-        <translation>Vous devez reconstruire les bases de données avec -reindex pour modifier -txindex</translation>
+        <translation type="vanished">Vous devez reconstruire les bases de données avec -reindex pour modifier -txindex</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrompu, la récupération a échoué</translation>
     </message>
