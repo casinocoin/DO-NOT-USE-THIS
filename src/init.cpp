@@ -651,8 +651,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    std::string versionString = COIN_NAME_DISPLAY + " version %s (%s)\n";
-    printf(versionString.c_str(), FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    printf("%s version %s (%s)\n", COIN_NAME_DISPLAY.c_str(), FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     printf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         printf("Startup time: %s\n", DateTimeStrFormat("%Y-%m-%d %H:%M:%S", GetTime()).c_str());

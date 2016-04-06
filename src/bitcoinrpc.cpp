@@ -185,7 +185,7 @@ Value stop(const Array& params, bool fHelp)
             "Stop "+ COIN_NAME_DISPLAY + " server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return ""+ COIN_NAME_DISPLAY + " server stopping";
+    return std::string("") + COIN_NAME_DISPLAY + " server stopping";
 }
 
 

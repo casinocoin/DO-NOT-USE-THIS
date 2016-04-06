@@ -22,8 +22,8 @@ extern const std::string CLIENT_BUILD;
 extern const std::string CLIENT_DATE;
 
 // Coin Name
-static const std::string COIN_NAME("casinocoin");
-static const std::string COIN_NAME_DISPLAY("CasinoCoin");
+static const std::string COIN_NAME("sandcoins");
+static const std::string COIN_NAME_DISPLAY("SandCoins");
 
 //
 // network protocol versioning
