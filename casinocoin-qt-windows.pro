@@ -1,6 +1,5 @@
 TEMPLATE = app
 TARGET = sandcoins-qt
-macx:TARGET = "SandCoins-Qt"
 VERSION = 2.0.1.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network widgets qml quick
@@ -119,7 +118,7 @@ contains(USE_BUILD_INFO, 1) {
 
 QMAKE_CXXFLAGS_WARN_ON = -fdiagnostics-show-option -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wno-strict-aliasing -Wstack-protector
 
-QMAKE_CXXFLAGS_WARN_ON += -Wno-unused-local-typedefs
+QMAKE_CXXFLAGS_WARN_ON += -Wno-unused-local-typedefs -Wno-maybe-uninitialized
 
 ##### Include Project Files #####
 

@@ -10,6 +10,7 @@
 #include "init.h"
 #include "util.h"
 #include "ui_interface.h"
+#include "version.h"
 
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
@@ -78,7 +79,7 @@ volatile bool fRequestShutdown = false;
 
 void StartShutdown()
 {
-	boost::this_thread::sleep_for( boost::chrono::seconds( 1 ) );
+    boost::this_thread::sleep_for( boost::chrono::seconds( 1 ) );
     fRequestShutdown = true;
 }
 bool ShutdownRequested()
@@ -180,12 +181,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("CasinoCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = COIN_NAME_DISPLAY + " version" + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  casinocoind [options]                     " + "\n" +
-                  "  casinocoind [options] <command> [params]  " + _("Send command to -server or casinocoind") + "\n" +
-                  "  casinocoind [options] help                " + _("List commands") + "\n" +
-                  "  casinocoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  "+ COIN_NAME + "d [options]                     " + "\n" +
+                  "  "+ COIN_NAME + "d [options] <command> [params]  " + "Send command to -server or "+ COIN_NAME + "d" + "\n" +
+                  "  "+ COIN_NAME + "d [options] help                " + "List commands" + "\n" +
+                  "  "+ COIN_NAME + "d [options] help <command>      " + "Get help for a command" + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -195,7 +196,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "casinocoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], (std::string("") + COIN_NAME + ":").c_str()))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -298,8 +299,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: casinocoin.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: casinocoind.pid)") + "\n" +
+        "  -conf=<file>           " + "Specify configuration file (default: "+ COIN_NAME + ".conf)" + "\n" +
+        "  -pid=<file>            " + "Specify pid file (default: "+ COIN_NAME + "d.pid)" + "\n" +
         "  -gen                   " + _("Generate coins (default: 0)") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
         "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n" +
@@ -376,7 +377,7 @@ std::string HelpMessage()
         "  -blockmaxsize=<n>      "   + _("Set maximum block size in bytes (default: 250000)") + "\n" +
         "  -blockprioritysize=<n> "   + _("Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)") + "\n" +
 
-        "\n" + _("SSL options: (see the CasinoCoin Wiki for SSL setup instructions)") + "\n" +
+        "\n" + "SSL options: (see the "+ COIN_NAME_DISPLAY + " Wiki for SSL setup instructions)" + "\n" +
         "  -rpcssl                                  " + _("Use OpenSSL (https) for JSON-RPC connections") + "\n" +
         "  -rpcsslcertificatechainfile=<file.cert>  " + _("Server certificate file (default: server.cert)") + "\n" +
         "  -rpcsslprivatekeyfile=<file.pem>         " + _("Server private key (default: server.pem)") + "\n" +
@@ -645,12 +646,13 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. CasinoCoin is probably already running."), strDataDir.c_str()));
+        return InitError(strprintf((std::string("Cannot obtain a lock on data directory %s. ")+ COIN_NAME_DISPLAY + " is probably already running.").c_str(), strDataDir.c_str()));
 
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    printf("CasinoCoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    std::string versionString = COIN_NAME_DISPLAY + " version %s (%s)\n";
+    printf(versionString.c_str(), FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     printf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         printf("Startup time: %s\n", DateTimeStrFormat("%Y-%m-%d %H:%M:%S", GetTime()).c_str());
@@ -660,8 +662,9 @@ bool AppInit2(boost::thread_group& threadGroup)
     std::ostringstream strErrors;
 
     if (fDaemon)
-        fprintf(stdout, "CasinoCoin server starting\n");
-
+    {
+        fprintf(stdout, "%s server starting\n", COIN_NAME_DISPLAY.c_str());
+    }
     if (nScriptCheckThreads) {
         printf("Using %u threads for script verification\n", nScriptCheckThreads);
         for (int i=0; i<nScriptCheckThreads-1; i++)
@@ -683,7 +686,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         {
             // try moving the database env out of the way
             boost::filesystem::path pathDatabase = GetDataDir() / "database";
-            boost::filesystem::path pathDatabaseBak = GetDataDir() / strprintf("database.%"PRI64d".bak", GetTime());
+            boost::filesystem::path pathDatabaseBak = GetDataDir() / strprintf("database.%" PRI64d ".bak", GetTime());
             try {
                 boost::filesystem::rename(pathDatabase, pathDatabaseBak);
                 printf("Moved old %s to %s. Retrying.\n", pathDatabase.string().c_str(), pathDatabaseBak.string().c_str());
@@ -947,7 +950,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         printf("Shutdown requested. Exiting.\n");
         return false;
     }
-    printf(" block index %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+    printf(" block index %15" PRI64d "ms\n", GetTimeMillis() - nStart);
 
     if (GetBoolArg("-printblockindex") || GetBoolArg("-printblocktree"))
     {
@@ -1001,10 +1004,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 InitWarning(msg);
             }
             else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of CasinoCoin") << "\n";
+                strErrors << "Error loading wallet.dat: Wallet requires newer version of " << COIN_NAME_DISPLAY << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE)
             {
-                strErrors << _("Wallet needed to be rewritten: restart CasinoCoin to complete") << "\n";
+                strErrors << "Wallet needed to be rewritten: restart "<< COIN_NAME_DISPLAY << " to complete" << "\n";
                 printf("%s", strErrors.str().c_str());
                 return InitError(strErrors.str());
             }
@@ -1044,7 +1047,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         }
 
         printf("%s", strErrors.str().c_str());
-        printf(" wallet      %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+        printf(" wallet      %15" PRI64d "ms\n", GetTimeMillis() - nStart);
 
         RegisterWallet(pwalletMain);
 
@@ -1066,7 +1069,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             printf("Rescanning last %i blocks (from block %i)...\n", pindexBest->nHeight - pindexRescan->nHeight, pindexRescan->nHeight);
             nStart = GetTimeMillis();
             pwalletMain->ScanForWalletTransactions(pindexRescan, true);
-            printf(" rescan      %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+            printf(" rescan      %15" PRI64d "ms\n", GetTimeMillis() - nStart);
             pwalletMain->SetBestChain(CBlockLocator(pindexBest));
             nWalletDBUpdated++;
         }
@@ -1099,7 +1102,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             printf("Invalid or missing peers.dat; recreating\n");
     }
 
-    printf("Loaded %i addresses from peers.dat  %"PRI64d"ms\n",
+    printf("Loaded %i addresses from peers.dat  %" PRI64d "ms\n",
            addrman.size(), GetTimeMillis() - nStart);
 
     // ********************************************************* Step 11: start node
@@ -1113,11 +1116,11 @@ bool AppInit2(boost::thread_group& threadGroup)
     RandAddSeedPerfmon();
 
     //// debug print
-    printf("mapBlockIndex.size() = %"PRIszu"\n",   mapBlockIndex.size());
+    printf("mapBlockIndex.size() = %" PRIszu "\n",   mapBlockIndex.size());
     printf("nBestHeight = %d\n",                   nBestHeight);
-    printf("setKeyPool.size() = %"PRIszu"\n",      pwalletMain ? pwalletMain->setKeyPool.size() : 0);
-    printf("mapWallet.size() = %"PRIszu"\n",       pwalletMain ? pwalletMain->mapWallet.size() : 0);
-    printf("mapAddressBook.size() = %"PRIszu"\n",  pwalletMain ? pwalletMain->mapAddressBook.size() : 0);
+    printf("setKeyPool.size() = %" PRIszu "\n",      pwalletMain ? pwalletMain->setKeyPool.size() : 0);
+    printf("mapWallet.size() = %" PRIszu "\n",       pwalletMain ? pwalletMain->mapWallet.size() : 0);
+    printf("mapAddressBook.size() = %" PRIszu "\n",  pwalletMain ? pwalletMain->mapAddressBook.size() : 0);
 
     StartNode(threadGroup);
 

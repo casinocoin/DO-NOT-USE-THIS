@@ -1,5 +1,5 @@
-<h2>Wallet 2.0.0.0 Release available</h2>
-[Click here to download the most recent wallet version -> 2.0.0.0 (Updated on December, 3 2015)](https://github.com/casinocoin/casinocoin/releases/tag/2.0.0.0 "Click to go to releases page")
+<h2>Wallet 2.0.1.0 Release available</h2>
+[Click here to download the most recent wallet version -> 2.0.1.0 (Updated on December, 11 2015)](https://github.com/casinocoin/casinocoin/releases/tag/2.0.1.0 "Click to go to releases page")
 
 <p align="center"><img src="https://raw.github.com/transcoder/CasinoCoin/master/src/qt/res/images/logo.png" /></p>
 
@@ -35,30 +35,26 @@ Technical Specifications
  - 30 second block time targets
  - ~63 million total coins
  - new digishield difficulty retargetting system (from block 445000) 
- - 50 coins per block, permanent reduction to 10 cons per block after block 575000
+ - 50 coins per block, permanent reduction to 10 coins per block after block 575000
  - fair launch, absolutely no premine
 
 Casinocoin Mailing Lists
 ========================
 
-If you operate a pool or service that relies on Casinocoin wallets, please subscribe to the "Csinocoin Development" mailing list for notifications of client updates, hardforks,or other issues that may impact you.
+If you operate a pool or service that relies on CasinoCoin wallets, please subscribe to the "CasinoCoin Development" mailing list for notifications of client updates, hardforks,or other issues that may impact you.
 
- - Casinocoin Development mailing list subscription form: http://eepurl.com/WGcoP
+ - CasinoCoin Development mailing list subscription form: http://eepurl.com/WGcoP
 
-If you are a community mber interested in more general announcements related to Casinocoin, please subscribe to the "Casinocoin Announcements" mailing list.
+If you are a community mber interested in more general announcements related to Casinocoin, please subscribe to the "CasinoCoin Announcements" mailing list.
 
- - Casinocoin Announcements mailing list subscription form: http://eepurl.com/WGeu1
+ - CasinoCoin Announcements mailing list subscription form: http://eepurl.com/WGeu1
 
 
 
 Links
 ======
 
-Website: http://casinocoin.org
-
-
-Forum: http://forums.casinocoin.org
-
+Website: https://casinocoin.org
 
 Source: https://github.com/casinocoin/casinocoin
 
