@@ -106,7 +106,7 @@ PaymentServer::PaymentServer(QApplication* parent) : QObject(parent), saveURIs(t
     uriServer = new QLocalServer(this);
 
     if (!uriServer->listen(name))
-        qDebug() << tr("Cannot start casinocoin: click-to-pay handler");
+        qDebug() << tr((std::string("Cannot start ")+ COIN_NAME + ": click-to-pay handler").c_str());
     else
         connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
 }

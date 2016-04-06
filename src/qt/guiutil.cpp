@@ -84,7 +84,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin URI
-    if(!uri.isValid() || uri.scheme() != QString("casinocoin"))
+    if(!uri.isValid() || uri.scheme() != QString(COIN_NAME.c_str()))
         return false;
 
     SendCoinsRecipient rv;
@@ -139,9 +139,9 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("casinocoin://"))
+    if(uri.startsWith(QString((COIN_NAME + "://").c_str())))
     {
-        uri.replace(0, 11, "casinocoin:");
+        uri.replace(0, (COIN_NAME.length()+1), QString((COIN_NAME + ":").c_str()));
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -301,7 +301,7 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "CasinoCoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / (COIN_NAME_DISPLAY + ".lnk").c_str();
 }
 
 bool GetStartOnSystemStartup()
@@ -383,7 +383,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "casinocoin.desktop";
+    return GetAutostartDir() / ""+ COIN_NAME + ".desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -424,7 +424,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=CasinoCoin\n";
+        optionFile << "Name="+ COIN_NAME_DISPLAY + "\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -495,10 +495,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("CasinoCoin-Qt") + " " + tr("version") + " " +
+    header = tr((COIN_NAME_DISPLAY + "-Qt").c_str()) + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  casinocoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        QString::fromStdString("  "+ COIN_NAME + "-qt [") + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -507,7 +507,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("CasinoCoin-Qt"));
+    setWindowTitle(tr((COIN_NAME_DISPLAY + "-Qt").c_str()));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));

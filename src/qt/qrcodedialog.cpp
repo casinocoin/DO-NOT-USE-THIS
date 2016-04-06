@@ -5,6 +5,7 @@
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
+#include "version.h"
 
 #include <QPixmap>
 #if QT_VERSION < 0x050000
@@ -85,7 +86,7 @@ void QRCodeDialog::genCode()
 
 QString QRCodeDialog::getURI()
 {
-    QString ret = QString("casinocoin:%1").arg(address);
+    QString ret = QString((COIN_NAME + ":%1").c_str()).arg(address);
     int paramCount = 0;
 
     ui->outUri->clear();
